@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/ausgabe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ausgabe" />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    //*fragment
+        android:id="@+id/user_input_fragment"
+        android:name=""
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        tools:layout="@layout/fragment_userinput"
+        /> fragment
+        android:id="@+id/user_display_fragment"
+        android:name="com.example.muf7.fragment.UserDisplayFragment"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        tools:layout="@layout/fragment_userdisplay"/>*//
+</LinearLayout>
